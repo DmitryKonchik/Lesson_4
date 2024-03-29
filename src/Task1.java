@@ -37,5 +37,19 @@ public class Task1 {
         }
         System.out.println("Max elem: " + max + " index of max elem: " + maxIndex);
         System.out.println("Min elem: " + min + " index of min elem: " + minIndex);
+
+        //Task4
+        int countZero = 0;
+        for (int i = 0; i < arrayLength; i++) {
+            if (array[i] == 0) {
+                countZero++;
+            }
+        }
+        if (countZero > 0){
+            System.out.println("В массиве " + countZero + " нулевых элементов");
+        } else {
+            System.out.println("В массиве нет нулевых элементов");
+        }
+
     }
 }
