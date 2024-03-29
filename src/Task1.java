@@ -53,7 +53,7 @@ public class Task1 {
 
         //Task5
 
-        int elem = 0;
+        int elem;
         for (int i = 0; i < arrayLength / 2; i++) {
             elem = array[i];
             array[i] = array[arrayLength - 1 - i];
