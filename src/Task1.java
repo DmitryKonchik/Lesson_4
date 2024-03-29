@@ -8,14 +8,14 @@ public class Task1 {
 
         for (int i = 0; i < arrayLength; i++) {
             //array[i] = scanner.nextInt();                // инициализация массива через консоль
-            array[i] = (int)(Math.random() * 100);       // инициализация массива рандомными числами
+            array[i] = (int)((Math.random() * 100) - 1);       // инициализация массива рандомными числами
         }
 //        Task1
         for (int i = 0; i < arrayLength; i++) {
             System.out.println(array[i]);
         }
 
-        System.out.println("");
+        System.out.println(" ");
 
         for (int i = arrayLength - 1; i >= 0; i--) {
             System.out.println(array[i]);
@@ -49,6 +49,15 @@ public class Task1 {
             System.out.println("В массиве " + countZero + " нулевых элементов");
         } else {
             System.out.println("В массиве нет нулевых элементов");
+        }
+
+        //Task5
+
+        int elem = 0;
+        for (int i = 0; i < arrayLength / 2; i++) {
+            elem = array[i];
+            array[i] = array[arrayLength - 1 - i];
+            array[arrayLength - 1 - i] = elem;
         }
 
     }
