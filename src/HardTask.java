@@ -6,12 +6,12 @@ public class HardTask {
         // необходимо создавать новый массив с большим числом эленментов
         Scanner scanner = new Scanner(System.in);
         int arrayLength = scanner.nextInt();
-//        int[] array = new int[arrayLength];
-        int[] array = {9, 9, 9, 5};
+        int[] array = new int[arrayLength];
+//        int[] array = {9, 9, 9, 5};
 
 
         for (int i = 0; i < array.length; i++) {
-//            array[i] = (int)((Math.random() * 10) - 1);
+            array[i] = (int)((Math.random() * 11) - 1);
             System.out.print(array[i] + " ");
         }
 
